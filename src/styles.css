@@ -1,0 +1,30 @@
+body, #content {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+button {
+    margin: 15px;
+    background-color: rgb(164, 194, 194);
+    color: white;
+    font-weight: 600;
+    border: none;
+    min-width: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;   
+}
+
+img {
+    max-height: 100vh;
+    width: 350px;
+}
+
+h2 {
+    margin: 0;
+}
