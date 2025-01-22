@@ -1,4 +1,6 @@
-export function loadAbout() {
+import { addFooter } from "./footer.js";
+
+function loadContact() {
     const contentDiv = document.getElementById("content");
 
     const heading1 = document.createElement("h2");
@@ -28,4 +30,7 @@ export function loadAbout() {
   contentDiv.appendChild(heading2);
   contentDiv.appendChild(paragraph2);
   
+  addFooter();
 }
+
+export { loadContact };
