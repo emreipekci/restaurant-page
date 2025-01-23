@@ -7,52 +7,52 @@ function loadMenu() {
 
   const page2Text = document.createElement("div");
   page2Text.className = "page2-text";
-  page2Text.textContent = "Whether you're a fan of classic combinations or bold new tastes, there's something for everyone to enjoy. You can find our 4 favourites here.";
+  page2Text.textContent = "Whether you're a fan of classic combinations or bold new tastes, there's something for everyone to enjoy.";
 
-  const pizzaOneContainer = document.createElement("div");
-  pizzaOneContainer.className = "pizza-container";
-  const pizzaOneTitle = document.createElement("p");
-  pizzaOneTitle.className = "pizza-title";
-  pizzaOneTitle.textContent = "Margherita";
-  const pizzaOneIngredients = document.createElement("p");
-  pizzaOneIngredients.className = "pizza-ingredients";
-  pizzaOneIngredients.textContent = "San Marzano tomato sauce, Mozzarella di bufala, Olive Oil";
+  const startersContainer = document.createElement("div");
+  startersContainer.className = "menu-container";
+  const startersTitle = document.createElement("p");
+  startersTitle.className = "menu-title";
+  startersTitle.textContent = "Starters";
+  const startersIngredients = document.createElement("p");
+  startersIngredients.className = "menu-ingredients";
+  startersIngredients.textContent = "Bruschetta • Caprese • Carpaccio • Focaccia • Marinated olives • Mixed salad";
 
-  const pizzaTwoContainer = document.createElement("div");
-  pizzaTwoContainer.className = "pizza-container";
-  const pizzaTwoTitle = document.createElement("p");
-  pizzaTwoTitle.className = "pizza-title";
-  pizzaTwoTitle.textContent = "Pepperoni";
-  const pizzaTwoIngredients = document.createElement("p");
-  pizzaTwoIngredients.className = "pizza-ingredients";
-  pizzaTwoIngredients.textContent = "Tomato sauce, Mozzarella, Chili peppers";
+  const pastaContainer = document.createElement("div");
+  pastaContainer.className = "menu-container";
+  const pastaTitle = document.createElement("p");
+  pastaTitle.className = "menu-title";
+  pastaTitle.textContent = "Pasta";
+  const pastaIngredients = document.createElement("p");
+  pastaIngredients.className = "menu-ingredients";
+  pastaIngredients.textContent = "Lasagne • Pasta Carbonara • Pesto Spaghetti • Penne alla arabiata • Tagliatelle with vegetables • Ravioli with ricotta and spinach";
 
-  const pizzaThreeContainer = document.createElement("div");
-  pizzaThreeContainer.className = "pizza-container";
-  const pizzaThreeTitle = document.createElement("p");
-  pizzaThreeTitle.className = "pizza-title";
-  pizzaThreeTitle.textContent = "Capricciosa";
-  const pizzaThreeIngredients = document.createElement("p");
-  pizzaThreeIngredients.className = "pizza-ingredients";
-  pizzaThreeIngredients.textContent = "Tomato sauce, Mozzarella, Mushrooms, Artichokes, Cooked ham, Olives, Olive oil";
+  const pizzaContainer = document.createElement("div");
+  pizzaContainer.className = "menu-container";
+  const pizzaTitle = document.createElement("p");
+  pizzaTitle.className = "menu-title";
+  pizzaTitle.textContent = "Pizzas";
+  const pizzaIngredients = document.createElement("p");
+  pizzaIngredients.className = "menu-ingredients";
+  pizzaIngredients.textContent = "Margherita • Pepperoni • Capricciosa • Napoletana • Calzone • Salami • Salmon • Vegeterian";
 
-  const pizzaFourContainer = document.createElement("div");
-  pizzaFourContainer.className = "pizza-container";
-  const pizzaFourTitle = document.createElement("p");
-  pizzaFourTitle.className = "pizza-title";
-  pizzaFourTitle.textContent = "Napoletana";
-  const pizzaFourIngredients = document.createElement("p");
-  pizzaFourIngredients.className = "pizza-ingredients";
-  pizzaFourIngredients.textContent = "Tomato sauce, Mozzarella, Anchovies and Olive oil";
+  const dessertsContainer = document.createElement("div");
+  dessertsContainer.className = "menu-container";
+  const dessertsTitle = document.createElement("p");
+  dessertsTitle.className = "menu-title";
+  dessertsTitle.textContent = "Desserts";
+  const dessertsIngredients = document.createElement("p");
+  dessertsIngredients.className = "menu-ingredients";
+  dessertsIngredients.textContent = "Classic tiramisu • Sorbet • Ice cream scoops";
 
 
   document.querySelector("#content").appendChild(page2Container);
-  page2Container.append(page2Text, pizzaOneContainer, pizzaTwoContainer, pizzaThreeContainer, pizzaFourContainer);
+  page2Container.append(page2Text, startersContainer, pastaContainer, pizzaContainer, dessertsContainer);
 
-  pizzaOneContainer.append(pizzaOneTitle, pizzaOneIngredients);
-  pizzaTwoContainer.append(pizzaTwoTitle, pizzaTwoIngredients);
-  pizzaThreeContainer.append(pizzaThreeTitle, pizzaThreeIngredients);
-  pizzaFourContainer.append(pizzaFourTitle, pizzaFourIngredients);
+  startersContainer.append(startersTitle, startersIngredients);
+  pastaContainer.append(pastaTitle, pastaIngredients);
+  pizzaContainer.append(pizzaTitle, pizzaIngredients);
+  dessertsContainer.append(dessertsTitle, dessertsIngredients);
 
   addFooter();
 }
