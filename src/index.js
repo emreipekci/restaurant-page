@@ -9,11 +9,6 @@ restaurantName.textContent = "PIZZERIA GIUSEPPE";
 
 header.appendChild(restaurantName);
 
-// Select buttons
-const buttonHome = document.querySelector(".btn-1");  
-const buttonMenu = document.querySelector(".btn-2");
-const buttonContact = document.querySelector(".btn-3");
-
 // Content container
 const content = document.getElementById("content");
 
@@ -24,17 +19,31 @@ function clearContent() {
 loadHome();
 
 // Add event listeners
-buttonHome.addEventListener("click", () => {
-    clearContent();
-    loadHome();
-});
+window.addEventListener("load", () => {
 
-buttonMenu.addEventListener("click", () => {
-    clearContent();
-    loadMenu();
-});
+// Select buttons
+    const buttonHome = document.querySelector(".btn-1");  
+    const buttonMenu = document.querySelector(".btn-2");
+    const buttonContact = document.querySelector(".btn-3");
 
-buttonContact.addEventListener("click", () => {
-    clearContent();
-    loadContact();
+    const buttons = [buttonHome, buttonMenu, buttonContact];
+
+    buttonHome.classList.add("active"); // Set "Home" as the active button initially
+
+// Add event listeners to buttons
+    buttons.forEach(button => {
+        button.addEventListener("click", () => {
+            // Remove 'active' class from all buttons
+            buttons.forEach(btn => btn.classList.remove("active"));
+
+            // Add 'active' class to the clicked button
+            button.classList.add("active");
+
+            // Call the corresponding content-loading function
+            clearContent();
+            if (button === buttonHome) loadHome();
+            if (button === buttonMenu) loadMenu();
+            if (button === buttonContact) loadContact();
+        });
+    });
 });

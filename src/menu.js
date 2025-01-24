@@ -5,9 +5,12 @@ function loadMenu() {
   const page2Container = document.createElement("div");
   page2Container.className = "page2-container";
 
+  const containerText = document.createElement("div");
+  containerText.className = "container-text";
+  
   const page2Text = document.createElement("div");
   page2Text.className = "page2-text";
-  page2Text.textContent = "Whether you're a fan of classic combinations or bold new tastes, there's something for everyone to enjoy.";
+  page2Text.textContent = "Whether you're a fan of classic combinations or bold new tastes, there's something for everyone to enjoy ♥";
 
   const startersContainer = document.createElement("div");
   startersContainer.className = "menu-container";
@@ -45,9 +48,10 @@ function loadMenu() {
   dessertsIngredients.className = "menu-ingredients";
   dessertsIngredients.textContent = "Classic tiramisu • Sorbet • Ice cream scoops";
 
-
+  
   document.querySelector("#content").appendChild(page2Container);
-  page2Container.append(page2Text, startersContainer, pastaContainer, pizzaContainer, dessertsContainer);
+  page2Container.appendChild(containerText);
+  containerText.append(page2Text, startersContainer, pastaContainer, pizzaContainer, dessertsContainer);
 
   startersContainer.append(startersTitle, startersIngredients);
   pastaContainer.append(pastaTitle, pastaIngredients);

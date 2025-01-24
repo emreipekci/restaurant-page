@@ -15,7 +15,7 @@ function loadHome() {
 
     const page1Paragraph = document.createElement("p");
     page1Paragraph.className = "page1-paragraph"
-    page1Paragraph.textContent = "The tastiest pizzas in Leiden. We craft every pizza with love, using only the freshest ingredients and traditional recipes passed down through generations. Relax in our cozy atmosphere or order your favorites to enjoy at home. Buon appetito!";
+    page1Paragraph.innerHTML = "The tastiest pizzas in Leiden. We craft every pizza with love, using only the freshest ingredients and traditional recipes passed down through generations. Relax in our cozy atmosphere or order your favorites to enjoy at home.<br> Buon appetito!";
 
     // Append all elements to the div
     

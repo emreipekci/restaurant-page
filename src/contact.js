@@ -21,10 +21,8 @@ function loadContact() {
 
     // Add Google Maps iframe
   const iframe = document.createElement("iframe");
+  iframe.className = "iframe";
   iframe.src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2448.0154488644694!2d4.4866484121160255!3d52.15222876327625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5c68b34451e51%3A0xb778833386f8ad6e!2sPizzeria%20Giuseppe!5e0!3m2!1sen!2snl!4v1737478595297!5m2!1sen!2snl";
-  iframe.width = "350";
-  iframe.height = "290";
-  iframe.style.border = "0";
   iframe.allowFullscreen = true;
   iframe.loading = "lazy";
 
