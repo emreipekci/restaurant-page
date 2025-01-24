@@ -5,10 +5,12 @@ The project demonstrates modular JavaScript structure and styling with CSS for a
 
 <a href = "https://emreipekci.github.io/restaurant-page/">Live demo</a>
 
+
 <p><strong>Outcome</strong></p>
 <p>Improved understanding of npm and git</p>
 <p>Learned how to organize code with modules</p>
 <p>Learned how to bundle the project with Webpack</p>
+
 
 <p><strong>Credits</strong></p>
 <p>Photo of homepage: Designed by<a href = "https://www.freepik.com/free-ai-image/local-pizzeria-waiter-carrying-pizza-wooden-tray-customers-old-pizzeria-italian-street_137486882.htm#fromView=search&page=1&position=4&uuid=f5bf2e87-d206-4f2f-968b-e572c9fb84ad&query=pizza+restaurant">Freepik</a></p>
